@@ -1,0 +1,63 @@
+//Color
+$main: #0d9788
+$second: #d26100
+$text: #181818
+
+//Mixin
+@mixin utmavo()
+    // font-family: "UTMAvo"
+    // font-weight: normal
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+
+@mixin utmavobold()
+    // font-family: "UTMAvoBold"
+    // font-weight: bold
+    font-family: 'Roboto', sans-serif
+    font-weight: 700
+
+@mixin prefixBlock($content: "", $top: "", $right: "", $bottom: "", $left: "", $width: "", $height: "", $z: "")
+    position: absolute
+    @if $content
+        content: $content
+    @else 
+        content: ""
+    @endif
+
+    @if $top != ""
+        top: $top
+
+    @if $right != ""
+        right: $right
+
+    @if $bottom != ""
+        bottom: $bottom
+
+    @if $left != ""
+        left: $left
+
+    @if $height != ""
+        height: $height
+
+    @if $width != ""
+        width: $width
+
+    z-index: $z
+    display: block
+
+@mixin absolutePosition($top: "", $left: "", $right: "", $bottom: "", $z: "")
+    position: absolute
+    @if $top != ""
+        top: $top
+
+    @if $right != ""
+        right: $right
+
+    @if $bottom != ""
+        bottom: $bottom
+
+    @if $left != ""
+        left: $left
+        
+    @if $z != ""
+        z-index: $z

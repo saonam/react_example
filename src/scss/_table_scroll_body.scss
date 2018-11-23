@@ -1,0 +1,157 @@
+/*table*/
+.content-body {
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.table-footer {
+    display: flex;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    bottom: 0;
+    padding: 14px 20px;
+    border-top: 1px solid #e3e3e3; 
+}
+
+.table-footer span {
+    color: #007aff;
+}
+
+.table-footer span:hover {
+
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+th div, .row-loaction{
+    display: flex;
+    align-items: center;
+}
+
+th div div{
+    padding-left: 10px;
+}
+
+th div div p{
+    height: 15px;
+    line-height: 15px;
+}
+
+td img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.row-check{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table td{
+    vertical-align: middle;
+    border-top: none;    
+}
+
+.table thead th {
+    border-top: 1px solid #fff !important;
+}
+
+.sort-location{
+    flex-direction: column;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+
+.dropdown-menu {
+    margin-top: .75rem;
+}
+.form-group, .form-group span label{
+    margin: 0px;
+}
+.status{
+    display: flex;
+}
+.status p{
+    flex: 1;
+}
+.action-chosen{
+    flex: 3;
+    display: flex;
+}
+.action-chosen a{
+    margin: 0px 15px 0px 0px;
+    padding: 0px 15px 0px 0px;
+    text-decoration: none;
+    border-right: 1px solid #ddd;
+}
+.none-data{
+    text-align: center;
+    color: red;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 0px !important;
+}
+
+thead, tbody, tr, td, th { display: block; }
+
+tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+thead th {
+    height: 58px;
+    padding: 17px 8px;
+}
+
+tbody {
+    /*height: 702px;*/
+    height: -moz-calc(100% - 50px);
+    height: -webkit-calc(100% - 50px);
+    height: calc(100% - 50px);
+    overflow-y: auto;
+}
+
+tbody td, thead th {
+    float: left;
+}
+
+.box-center {
+    height: 100px;
+}
+
+.box-center-check {
+    height: 85px;
+}
+
+.check-item {
+    padding: 0 !important;
+}
+
+.row-loaction-check {
+    justify-content: center;
+    padding: 7px;
+}
+@media screen and (max-width: 1920px) {
+    .note-modal{
+        width: 599px; 
+        height: 191px
+    }
+}
+.dropdown-item:hover, .dropdown-item:focus{
+    background-color: #edebf2;
+
+}
+
+.footer{
+    padding-left: 4px;
+    padding-right: 4px;
+}
